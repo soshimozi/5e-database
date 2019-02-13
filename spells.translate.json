@@ -1,0 +1,34 @@
+{
+  "5e-spells" : {
+    "index": "N",
+    "name": "S",
+    "desc": "SS",
+    "higher_level": "SS",
+    "page": "S",
+    "range": "S",
+    "components": "SS",
+    "material": "S",
+    "ritual": "S",
+    "duration": "S",
+    "concentration": "S",
+    "casting_time": "S",
+    "level": "N",
+    "school": {
+      "url": "S",
+      "name": "S"
+    },
+    "classes": [
+      {
+        "url": "S",
+        "name": "S"
+      }
+    ],
+    "subclasses": [
+      {
+        "name": "S",
+        "url": "S"
+      }
+    ],
+    "url": "S"
+  }
+}

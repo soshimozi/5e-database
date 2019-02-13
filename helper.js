@@ -18,7 +18,7 @@ function create_upload_file(datatype_string) {
 		for(let i = 0; i < data.length; i++) {
 			data[i].index = i + 1;
 			if (data_type !== "levels") {
-				data[i].url = "http://www.dnd5eapi.co/api/" + datatype_string + "/"+ (i + 1).toString();
+				data[i].url = "https://5eapi.bitwisemobile.com/v1/" + datatype_string + "/"+ (i + 1).toString();
 			}			
 		}
 
