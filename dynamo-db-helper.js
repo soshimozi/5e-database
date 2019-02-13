@@ -56,8 +56,8 @@ function create_upload_file(datatype_string, translate_data) {
           let translate_item = translation_map[item_key];
           let curValue = item[item_key];
 
-          console.log('translate_item', translate_item);
-          console.log('item_key', item_key);
+          //console.log('translate_item', translate_item);
+          //console.log('item_key', item_key);
 
           //console.log('curValue', curValue);
           //console.log('itemKey', item_key);
@@ -74,10 +74,14 @@ function create_upload_file(datatype_string, translate_data) {
               let lstack = ri[item_key].L = [];
               let new_keys = Object.getOwnPropertyNames(translate_item[0]);
 
+              console.log('new_keys', new_keys);
+              console.log('translate_item[0]', translate_item[0]);
+              console.log('curValue', curValue);
+
               for(let n = 0; n < curValue.length; n++) {
                 let newItem = {};
                 lstack.push(newItem);
-                processItem(curValue, new_keys, translate_item[0], newItem);
+                processItem(curValue[n], new_keys, translate_item[0], newItem);
               }
 
             }
