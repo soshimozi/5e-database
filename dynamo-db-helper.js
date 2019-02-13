@@ -81,7 +81,10 @@ function create_upload_file(datatype_string, translate_data) {
               for(let n = 0; n < curValue.length; n++) {
                 let newItem = {};
                 lstack.push(newItem);
-                processItem(curValue[n], new_keys, translate_item[0], newItem);
+
+                newItem.M = {};
+                
+                processItem(curValue[n], new_keys, translate_item[0], newItem.M);
               }
 
             }
